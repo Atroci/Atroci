@@ -1,8 +1,8 @@
 # Hugo
 
-I build tools that help answer a simple question: where did this customer come from?
+Sometimes I build tools that help answer a simple question: where did this customer come from?
 
-I run Vizuh from Portugal. I work across ads, websites, forms, bookings, and the data between them.
+I work across ads, websites, forms, bookings, and the data between them.
 
 ## what i'm building
 
@@ -26,5 +26,5 @@ A click is useful only if its context survives long enough to connect to a lead,
 
 ## find me
 
-- [vizuh.com](https://vizuh.com)
+
 - hugo@vizuh.com
