@@ -15,6 +15,11 @@
 
 I work across ads, websites, forms, bookings, and the data between them.
 
+![Contributions (1yr)](https://img.shields.io/badge/Contributions%20%281yr%29-9%2C129-2b2b2b?style=flat-square&logo=github&logoColor=white)
+![Stars](https://img.shields.io/badge/Stars-43-2b2b2b?style=flat-square&logo=github&logoColor=white)
+![Projects](https://img.shields.io/badge/Projects-44-2b2b2b?style=flat-square&logo=github&logoColor=white)
+![Followers](https://img.shields.io/badge/Followers-11-2b2b2b?style=flat-square&logo=github&logoColor=white)
+
 [products](#products) · [what i'm building](#what-im-building) · [working on now](#working-on-now) · [data attribution](#data-attribution) · [find me](#find-me)
 
 ## products
@@ -28,7 +33,7 @@ I work across ads, websites, forms, bookings, and the data between them.
 
 ## what i'm building
 
-- **[ClickTrail](https://wordpress.org/plugins/click-trail-handler/)** — consent-aware first-touch and last-touch attribution. It keeps UTMs, click IDs, referrers, and channel context available across cached pages, forms, WooCommerce, and optional GTM or server-side delivery.
+- **[ClickTrail](https://wordpress.org/plugins/click-trail-handler/)** — consent-aware first-touch and last-touch attribution. It keeps UTMs, click IDs, referrers, and channel context available across cached pages, forms, WooCommerce, and optional GTM or server-side delivery. ([Product Hunt](https://www.producthunt.com/products/clicktrail))
 - **[TokenScout](https://github.com/Atroci/tokenscout)** — turns a rendered website into an evidence-backed redesign baseline. It extracts computed styles, design tokens, assets, motion, topology, screenshots, and Design DNA. ([Product Hunt](https://www.producthunt.com/products/tokenscout))
 
 ## working on now
@@ -67,5 +72,6 @@ I work across ads, websites, forms, bookings, and the data between them.
 
 [![Email](https://img.shields.io/badge/-hugo@vizuh.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:hugo@vizuh.com)
 [![Website](https://img.shields.io/badge/-vizuh.com-2b2b2b?style=flat-square&logo=google-chrome&logoColor=white)](https://vizuh.com)
+[![LinkedIn](https://img.shields.io/badge/-Hugo%20Carvalho-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hugocarvalho28/)
 [![GitHub](https://img.shields.io/badge/-Atroci-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Atroci)
 [![Product Hunt](https://img.shields.io/badge/-TokenScout-DA552F?style=flat-square&logo=producthunt&logoColor=white)](https://www.producthunt.com/products/tokenscout)
