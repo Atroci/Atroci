@@ -1,68 +1,61 @@
 # Hugo
 
-**Portugal** · Attribution and measurement · Building for SMBs
+**Portugal (remote)** · Attribution and measurement engineer · Founder of [Vizuh](https://vizuh.com)
 
+I build first-party attribution tools that connect ad clicks to the leads, bookings and sales they produce.
+
+Most marketing data breaks somewhere between the ad, the landing page, the consent banner, the form and the CRM. I work on that gap: ads, websites, forms, bookings, and the data between them.
+
+> **Open to:** consulting and contract work on attribution, GA4, GTM (including server-side) and BigQuery · senior or lead roles in measurement or analytics engineering · founding or early roles at startups in martech, adtech or analytics · agencies and SaaS teams that want first-party attribution built in.
+>
+> **Reach me:** [hugo@vizuh.com](mailto:hugo@vizuh.com)
+
+**Measurement:**
 ![Google Ads](https://img.shields.io/badge/-Google%20Ads-2b2b2b?style=flat-square&logo=googleads&logoColor=4285F4)
 ![GA4](https://img.shields.io/badge/-GA4-2b2b2b?style=flat-square&logo=googleanalytics&logoColor=E37400)
+![GTM server-side](https://img.shields.io/badge/-GTM%20(server--side)-2b2b2b?style=flat-square&logo=googletagmanager&logoColor=8AB4F8)
 ![BigQuery](https://img.shields.io/badge/-BigQuery-2b2b2b?style=flat-square&logo=googlebigquery&logoColor=6699FF)
-![GTM](https://img.shields.io/badge/-GTM-2b2b2b?style=flat-square&logo=googletagmanager&logoColor=8AB4F8)
-![WordPress](https://img.shields.io/badge/-WordPress-2b2b2b?style=flat-square&logo=wordpress&logoColor=21759B)
+
+**Engineering:**
 ![PHP](https://img.shields.io/badge/-PHP-2b2b2b?style=flat-square&logo=php&logoColor=777BB4)
+![WordPress](https://img.shields.io/badge/-WordPress-2b2b2b?style=flat-square&logo=wordpress&logoColor=21759B)
+![Laravel / Filament](https://img.shields.io/badge/-Laravel%20%2F%20Filament-2b2b2b?style=flat-square&logo=laravel&logoColor=FF2D20)
+![Twig](https://img.shields.io/badge/-Twig-2b2b2b?style=flat-square)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-2b2b2b?style=flat-square&logo=typescript&logoColor=3178C6)
 ![Python](https://img.shields.io/badge/-Python-2b2b2b?style=flat-square&logo=python&logoColor=3776AB)
+![MCP](https://img.shields.io/badge/-MCP-2b2b2b?style=flat-square)
 
-*Sometimes I build tools that help answer a simple question: where did this customer come from?*
+[clicktrail](#clicktrail) · [also building](#also-building) · [why attribution](#why-attribution) · [find me](#find-me)
 
-I work across ads, websites, forms, bookings, and the data between them.
+## clicktrail
 
-![Contributions (1yr)](https://img.shields.io/badge/Contributions%20%281yr%29-9%2C129-2b2b2b?style=flat-square&logo=github&logoColor=white)
-![Stars](https://img.shields.io/badge/Stars-43-2b2b2b?style=flat-square&logo=github&logoColor=white)
-![Projects](https://img.shields.io/badge/Projects-44-2b2b2b?style=flat-square&logo=github&logoColor=white)
-![Followers](https://img.shields.io/badge/Followers-11-2b2b2b?style=flat-square&logo=github&logoColor=white)
+**[ClickTrail](https://wordpress.org/plugins/click-trail-handler/)** answers one question: *where did this customer come from?*
 
-[products](#products) · [what i'm building](#what-im-building) · [working on now](#working-on-now) · [data attribution](#data-attribution) · [find me](#find-me)
+It keeps the source of each visit (UTMs, ad click IDs, referrer, channel) attached to the visitor across cached pages, forms, bookings and WooCommerce orders, records first and last touch, and only does it when consent allows. Data can stay in WordPress or go on to GTM or a server-side setup. ([Product Hunt](https://www.producthunt.com/products/clicktrail))
 
-## products
+It started as a WordPress plugin and is now a small toolchain:
 
-| Site | What it is |
+| Repo | What it does |
 |---|---|
-| **[Vizuh](https://vizuh.com)** | Google Ads, landing pages, measurement, and organic work for SMBs that need to know what their marketing is doing. |
-| **[Apointoo](https://apointoo.com)** | Online scheduling for local businesses. It gives a business a page and a way to receive bookings online. |
-| **[PlugnRank](https://plugnrank.com)** | SEO automation for solo founders, SMBs, agencies, and in-house teams. |
-| **[FunnelSheet](https://funnelsheet.com)** | Measurement implementation across GA4, Google Ads, Meta, GTM server-side, and BigQuery. |
+| **[click-trail-handler](https://github.com/vizuh/click-trail-handler)** | The WordPress plugin. Attaches campaign source to form submissions and WooCommerce orders, with consent and delivery controls. |
+| **[clicktrail-php](https://github.com/vizuh/clicktrail-php)** | The core engine for any PHP app. Works out first and last touch for each lead and produces one consistent event. |
+| **[clicktrail-filament](https://github.com/vizuh/clicktrail-filament)** | Laravel admin panels: settings, attribution records, why an event was suppressed, and event mapping. |
+| **[clicktrail-twig](https://github.com/vizuh/clicktrail-twig)** | Twig helpers that add the loader tag, hidden source fields and consent attributes to templates. |
+| **[clicktrail-gtm-attribution-variable](https://github.com/vizuh/clicktrail-gtm-attribution-variable)** | A GTM variable that gives any tag the visitor's source plus stored first and last touch. |
+| **[clicktrail-verify](https://github.com/vizuh/clicktrail-verify)** | Checks in a real browser that attribution data actually reaches the form, with consent respected. |
+| **[clicktrail-mcp](https://github.com/vizuh/clicktrail-mcp)** | Lets AI assistants inspect an attribution setup: diagnostics, coverage, integration code and conversion reconciliation. |
 
-## what i'm building
+## also building
 
-- **[ClickTrail](https://wordpress.org/plugins/click-trail-handler/)** — consent-aware first-touch and last-touch attribution. It keeps UTMs, click IDs, referrers, and channel context available across cached pages, forms, WooCommerce, and optional GTM or server-side delivery. ([Product Hunt](https://www.producthunt.com/products/clicktrail))
-- **[TokenScout](https://github.com/Atroci/tokenscout)** — turns a rendered website into an evidence-backed redesign baseline. It extracts computed styles, design tokens, assets, motion, topology, screenshots, and Design DNA. ([Product Hunt](https://www.producthunt.com/products/tokenscout))
+- **[TokenScout](https://github.com/Atroci/tokenscout)**: point it at a live website and get a redesign baseline backed by evidence: design tokens, computed styles, assets, motion, page structure and screenshots. ([Product Hunt](https://www.producthunt.com/products/tokenscout))
+- I also run **[Apointoo](https://apointoo.com)** (online booking for local businesses), **[PlugnRank](https://plugnrank.com)** (SEO automation) and **[FunnelSheet](https://funnelsheet.com)** (GA4, Google Ads, Meta, server-side GTM and BigQuery implementation).
 
-## working on now
-
-*Commits authored by me in public repos over the last 30 days, as of 2026-09-17.*
-
-| Project | Commits | What it is |
-|---|---|---|
-| **[click-trail-handler](https://github.com/vizuh/click-trail-handler)** | 59 | First-party campaign-context capture for configured WordPress forms and WooCommerce paths, with explicit consent and delivery controls. |
-| **[clicktrail-mcp](https://github.com/vizuh/clicktrail-mcp)** | 13 | MCP stdio server for attribution schemas, diagnostics, integration code generation, coverage, and conversion reconciliation. |
-| **[clicktrail-php](https://github.com/vizuh/clicktrail-php)** | 11 | Deterministic PHP engine for parsing observed acquisition context, applying first/last-touch rules, and building canonical events. |
-| **[clicktrail-filament](https://github.com/vizuh/clicktrail-filament)** | 11 | Filament 3 surfaces for settings, read-only attribution records, suppression diagnostics, and event mapping. |
-| **[clicktrail-verify](https://github.com/vizuh/clicktrail-verify)** | 9 | Local browser and source verification for consent-aware attribution handoffs. |
-| **[clicktrail-twig](https://github.com/vizuh/clicktrail-twig)** | 7 | Render-only Twig 3 helpers for loader tags, hidden acquisition-context inputs, and consent attributes. |
-| **[clicktrail-gtm-attribution-variable](https://github.com/vizuh/clicktrail-gtm-attribution-variable)** | 7 | GTM variable exposing observed acquisition context and persisted first/last-touch state. |
-
-## data attribution
+## why attribution
 
 > [!IMPORTANT]
-> A click is useful only if its context survives long enough to connect to a lead, booking, or
-> sale. That means handling messy handoffs between landing pages, consent, forms, booking flows,
-> and reporting — and accepting that the hard part is rarely the capture, it's the reconciliation.
-
-## lately
-
-- rendered-site forensics and evidence-backed redesigns
-- first-party, consent-aware attribution
-- booking and lead workflows
-- BigQuery and the parts of marketing data that need to be checked by hand
+> A click is only useful if its context survives long enough to connect to a lead, booking or
+> sale. That means handling the messy handoffs between landing pages, consent, forms, booking
+> flows and reporting. The hard part is rarely capturing the data. It's reconciling it.
 
 ## activity
 
@@ -74,4 +67,4 @@ I work across ads, websites, forms, bookings, and the data between them.
 [![Website](https://img.shields.io/badge/-vizuh.com-2b2b2b?style=flat-square&logo=google-chrome&logoColor=white)](https://vizuh.com)
 [![LinkedIn](https://img.shields.io/badge/-Hugo%20Carvalho-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hugocarvalho28/)
 [![GitHub](https://img.shields.io/badge/-Atroci-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Atroci)
-[![Product Hunt](https://img.shields.io/badge/-TokenScout-DA552F?style=flat-square&logo=producthunt&logoColor=white)](https://www.producthunt.com/products/tokenscout)
+[![Product Hunt](https://img.shields.io/badge/-ClickTrail-DA552F?style=flat-square&logo=producthunt&logoColor=white)](https://www.producthunt.com/products/clicktrail)
